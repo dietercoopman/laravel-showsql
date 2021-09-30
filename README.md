@@ -47,7 +47,7 @@ DB::table('menus')->join('statuses', 'statuses.id', '=', 'menus.status_id')
 
 ```
 
-In this case de debug tools and the browser log the query
+This is an example log output
 
 ![showsql example](example.png)
 
