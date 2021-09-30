@@ -2,9 +2,9 @@
 
 namespace Dietercoopman\Showsql\Tests;
 
+use Dietercoopman\Showsql\ShowsqlServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Dietercoopman\Showsql\ShowsqlServiceProvider;
 
 class TestCase extends Orchestra
 {
