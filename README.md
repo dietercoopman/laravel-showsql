@@ -9,12 +9,12 @@ A Laravel package to output a specific sql to your favourite debugging tool, you
 
 ## Use case
 
-You often want to draw the attention and look into one single sql while you are developing.  You can lookup your sql in your favourite debugging
+You often want to draw the attention and look into one single sql while you are developing.  You can look up your sql in your favourite debugging
 tool in the sql tab , but most of the time your sql is not the only sql executed ... So the searching begins.  With this package you can
 add `showSql()` to your QueryBuilder and the single sql will be outputted to the logging of your debug tool.
 
-The supported log output is Laravel Telescope, Laravel Log, Ray, Clockwork, Laravel Debugbar and your browser.  By default showSql will try to
-log to one Ray, Clockwork or the Laravel Debugbar if one off them is installed.  If all installed it will be output to all.
+The supported log output is Laravel Telescope, Laravel Log, Ray, Clockwork, Laravel Debugbar and your browser.  By default, showSql will try to
+log to one Ray, Clockwork or the Laravel Debugbar if one of them is installed.  If all installed it will be output to all.
 If you want to change this behaviour you can publish the config file and change it.
 
 ## Installation 
