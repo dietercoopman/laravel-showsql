@@ -5,7 +5,7 @@ namespace Dietercoopman\Showsql;
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @see \Dietercoopman\Showsql\Showsql
+ * @see \Dietercoopman\Showsql\ShowSql
  */
 class ShowsqlFacade extends Facade
 {

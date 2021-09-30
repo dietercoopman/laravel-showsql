@@ -10,7 +10,9 @@ class ShowsqlServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {
-        $package->name('Laravel showSql');
+        $package
+            ->name('showsql')
+            ->hasConfigFile();
 
         Builder::macro('showSql', function () {
             $showSql = new ShowSql($this);

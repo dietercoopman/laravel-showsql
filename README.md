@@ -2,27 +2,38 @@
 
 🚧 This is a mvp , it works but needs some enhancements 🚧
 
+## Use case
+
+You often want to draw the attention and look into one single sql while you are developing.  You can lookup your sql in your favourite debugging
+tool in the sql tab , but most of the time your sql is not the only sql executed ... So the searching begins.  With this package you can
+add `showSql()` to your QueryBuilder and the single sql will be outputted to the logging of your debug tool.
+
+The supported log output is Laravel Telescope, Laravel Log, Ray, Clockwork, Laravel Debugbar and your browser.  By default showSql will try to
+log to one Ray, Clockwork or the Laravel Debugbar if one off them is installed.  If all installed it will be output to all.
+If you want to change this behaviour you can publish the config file and change it.
+
 ## Installation 
 
 ```shell
 composer require dietercoopman/laravel-showsql --dev
 ```
 
-## Use case
+## Configuration
 
-You often want to draw the attention and look into one single sql while you are developing.  You can lookup your sql in your favourite debugging tool in the sql tab , but most of the time your sql is not the only sql executed ... So the searching begins.  With this package you can add `showSql()` to your QueryBuilder and the single sql will be outputted to the logging of your debug tool.
+You can publish the config file with the following command
 
-This works with ray , clockwork and debugbar 
+```shell
+php artisan vendor:publish --tag=showsql-config 
+```
 
 ## Examples 
 
 ```php 
+DB::table('menus')->where('id', '=', 10)->showSql()->get();
 
-    DB::table('menus')->where('id', '=', 10)->showSql()->get();
+Menu::showSql()->get();
 
-    Menu::showSql()->get();
-
-    Menu::whereId(1)->showSql()->get();
+Menu::whereId(1)->showSql()->get();
 ```
 
 ![showsql example](example.png)
