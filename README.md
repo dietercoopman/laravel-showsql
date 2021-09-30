@@ -1,6 +1,6 @@
 # Showsql
 
-🚧 This is a mvp , it works but needs some enhancements 🚧
+A Laravel package to output a specific sql to your favourite debugging tool, your browser or your log file.
 
 ## Use case
 
