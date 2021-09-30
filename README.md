@@ -36,6 +36,8 @@ Menu::showSql()->get();
 Menu::whereId(1)->showSql()->get();
 ```
 
+In this case de debug tools and the browser log the query
+
 ![showsql example](example.png)
 
 ## Changelog
