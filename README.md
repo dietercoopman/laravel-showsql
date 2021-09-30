@@ -1,4 +1,4 @@
-# A Laravel package to output an sql given to the database
+# A Laravel package to log the current sql to your favourite debug tool
 
 ## Changelog
 
