@@ -1,5 +1,16 @@
 # A Laravel package to log the current sql to your favourite debug tool
 
+## Examples 
+
+```php 
+
+    DB::table('menus')->where('id', '=', 10)->showSql()->get();
+
+    Menu::showSql()->get();
+
+    Menu::whereId(1)->showSql()->get();
+```
+
 ## Changelog
 
 Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
