@@ -5,7 +5,7 @@
 ## Installation 
 
 ```shell
-composer require dietercoopman/laravel-showsql
+composer require dietercoopman/laravel-showsql --dev
 ```
 
 ## Use case
