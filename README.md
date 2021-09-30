@@ -1,4 +1,4 @@
-# A Laravel package to log the current sql to your favourite debug tool
+# Showsql
 
 🚧 This is a mvp , it works but needs some enhancements 🚧
 
