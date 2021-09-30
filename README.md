@@ -1,4 +1,4 @@
-# Showsql
+# Laravel showsql
 
 A Laravel package to output a specific sql to your favourite debugging tool, your browser or your log file.
 
