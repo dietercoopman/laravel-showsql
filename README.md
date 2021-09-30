@@ -31,11 +31,20 @@ php artisan vendor:publish --tag=showsql-config
 ## Examples 
 
 ```php 
-DB::table('menus')->where('id', '=', 10)->showSql()->get();
-
+# With the Eloquent Builder
 Menu::showSql()->get();
 
 Menu::whereId(1)->showSql()->get();
+
+Manu::whereHas('status')->showSql()->get();
+
+# With the Query Builder
+DB::table('menus')->where('id', '=', 10)->showSql()->get();
+
+DB::table('menus')->join('statuses', 'statuses.id', '=', 'menus.status_id')
+                 ->showSql()
+                 ->get();
+
 ```
 
 In this case de debug tools and the browser log the query
