@@ -1,17 +1,17 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "dietercoopman/laravel-showsql",
+    "description": "A Laravel package to output as given to the database",
     "keywords": [
-        ":vendor_name",
+        "dietercoopman",
         "laravel",
-        ":package_slug"
+        "showsql"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/dietercoopman/showsql",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Dieter Coopman",
+            "email": "dieter@deltasolutions.be",
             "role": "Developer"
         }
     ],
@@ -30,13 +30,13 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories"
+            "Dietercoopman\\Showsql\\": "src",
+            "Dietercoopman\\Showsql\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests"
+            "Dietercoopman\\Showsql\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -49,10 +49,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "Dietercoopman\\Showsql\\ShowsqlServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\SkeletonFacade"
+                "Showsql": "Dietercoopman\\Showsql\\ShowsqlFacade"
             }
         }
     },
