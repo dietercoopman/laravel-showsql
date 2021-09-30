@@ -2,6 +2,12 @@
 
 🚧 This is a mvp , it works but needs some enhancements 🚧
 
+## Installation 
+
+```shell
+composer require dietercoopman/laravel-showsql
+```
+
 ## Use case
 
 You often want to draw the attention and look into one single sql while you are developing.  You can lookup your sql in your favourite debugging tool in the sql tab , but most of the time your sql is not the only sql executed ... So the searching begins.  With this package you can add `showSql()` to your QueryBuilder and the single sql will be outputted to the logging of your debug tool.
