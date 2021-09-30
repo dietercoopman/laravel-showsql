@@ -11,6 +11,10 @@
     Menu::whereId(1)->showSql()->get();
 ```
 
+[resources/example.png]
+
+![showsql example](example.png)
+
 ## Changelog
 
 Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
