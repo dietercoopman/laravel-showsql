@@ -14,7 +14,11 @@ tool in the sql tab , but most of the time your sql is not the only sql executed
 add `showSql()` to your QueryBuilder and the single sql will be outputted to the logging of your debug tool.
 
 The supported log output is Laravel Telescope, Laravel Log, Ray, Clockwork, Laravel Debugbar and your browser.  By default, showSql will try to
+<<<<<<< Updated upstream
 log to Ray, Clockwork or the Laravel Debugbar if one of them is installed.  If all installed it will be output to all.
+=======
+log to one Ray, Clockwork or the Laravel Debugbar if one of them is installed.  If all installed it will be output to all.
+>>>>>>> Stashed changes
 If you want to change this behaviour you can publish the config file and change it.
 
 ## Installation 
