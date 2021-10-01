@@ -39,7 +39,7 @@ Menu::showSql()->get();
 
 Menu::whereId(1)->showSql()->get();
 
-Manu::whereHas('status')->showSql()->get();
+Menu::whereHas('status')->showSql()->get();
 
 # With the Query Builder
 DB::table('menus')->where('id', '=', 10)->showSql()->get();
