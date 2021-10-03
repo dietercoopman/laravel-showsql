@@ -61,7 +61,7 @@ $callback = function(string $sql){
 DB::table('products')->where('id', '=', 1)->show($callback)->get();
 ```
 
-This is an example log output
+## This is an example log output
 
 ![showsql example](example.png)
 
