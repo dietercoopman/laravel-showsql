@@ -14,8 +14,8 @@ tool in the sql tab , but most of the time your sql is not the only sql executed
 add `showSql()` to your QueryBuilder and the single sql will be outputted to the logging of your debug tool.
 
 The supported log output is Laravel Telescope, Laravel Log, Ray, Clockwork, Laravel Debugbar and your browser.  By default, showSql will try to
-
 log to Ray, Clockwork or the Laravel Debugbar if one of them is installed.  If all installed it will be output to all.
+If you want your own log implementation you can pass a callback to showSql.
 
 If you want to change this behaviour you can publish the config file and change it.
 
@@ -50,11 +50,25 @@ DB::table('menus')->join('statuses', 'statuses.id', '=', 'menus.status_id')
                  ->showSql()
                  ->get();
 
+# With a callback 
+
+$callback = function(string $sql){
+  Log::info($sql);
+};
+
+DB::table('products')->where('id', '=', 1)->show($callback)->get();
 ```
 
 This is an example log output
 
 ![showsql example](example.png)
+
+## Why is this not available in the core of Laravel ?
+
+I've created a pull request to the framework that has been declined.  It adds too much extra logic to the framework itself.
+The queries as generated in this code are actual not the real statements as passed to your database engines.  The real sql never lives 
+in the framework.  The query and bindings are passed separately to the database engine and constructed there.  So there might be
+some edge cases. [You can see my pull request here](https://github.com/laravel/framework/pull/39053)
 
 ## Changelog
 
