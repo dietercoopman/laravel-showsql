@@ -37,6 +37,7 @@ php artisan vendor:publish --tag=showsql-config
 
 ```php 
 # With the Eloquent Builder
+
 Menu::showSql()->get();
 
 Menu::whereId(1)->showSql()->get();
@@ -44,6 +45,7 @@ Menu::whereId(1)->showSql()->get();
 Menu::whereHas('status')->showSql()->get();
 
 # With the Query Builder
+
 DB::table('menus')->where('id', '=', 10)->showSql()->get();
 
 DB::table('menus')->join('statuses', 'statuses.id', '=', 'menus.status_id')
