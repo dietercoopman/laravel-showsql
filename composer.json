@@ -1,6 +1,6 @@
 {
     "name": "dietercoopman/laravel-showsql",
-    "description": "A Laravel package to output as given to the database",
+    "description": "A Laravel package to output an sql as given to the database",
     "keywords": [
         "dietercoopman",
         "laravel",
