@@ -19,15 +19,15 @@ class ShowsQueriesTest extends TestCase
 
         config(['showsql.to.browser' => true]);
         Builder::macro('showSql', function ($callback = null) {
-            $showSql = new ShowSql($this,$callback);
+            $showSql = new ShowSql($this, $callback);
 
             return $showSql->getBuilder();
         });
 
-        $db = new DB;
+        $db = new DB();
 
         $db->addConnection([
-            'driver'   => 'sqlite',
+            'driver' => 'sqlite',
             'database' => ':memory:',
         ]);
 

@@ -131,9 +131,11 @@ class ShowSql
             switch ($value) {
                 case null:
                     $value = 'null';
+
                     break;
                 case is_bool($value):
                     $value = $value ? 'true' : 'false';
+
                     break;
                 case is_numeric($value):
                     break;
@@ -141,6 +143,7 @@ class ShowSql
                     $value = with($query->getConnection(), function ($connection) use ($value) {
                         return $connection->getPdo()->quote((string)$value);
                     });
+
                     break;
             }
 
