@@ -1,4 +1,4 @@
-![Tests](https://github.com/dietercoopman/laravel-showsql/workflows/tests/badge.svg)
+![Tests](https://github.com/dietercoopman/laravel-showsql/workflows/run-tests/badge.svg)
 ![Downloads](https://img.shields.io/packagist/dt/dietercoopman/laravel-showsql.svg?style=flat-square)
 
 
