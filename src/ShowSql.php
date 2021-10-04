@@ -9,12 +9,12 @@ use Illuminate\Support\Facades\Log;
 class ShowSql
 {
     private string       $sql;
-    private QueryBuilder|EloquentBuilder $builder;
+    private $builder;
 
     /**
      * Combine the query and the bindings into a rendered
      * sql statement that can be passed to any chosen output
-     * @param $builder QueryBuilder|EloquentBuilder
+     * @param mixed $builder
      * @param null $callback
      */
     public function __construct($builder, $callback = null)
