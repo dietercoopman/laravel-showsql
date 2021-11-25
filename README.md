@@ -33,6 +33,23 @@ You can publish the config file with the following command
 php artisan vendor:publish --tag=showsql-config 
 ```
 
+Laravel showsql is default configured to output to ray,clockwork and laravel debugbar.  If you want to change this you can do it in the published config file.
+
+```php
+
+return [
+    'to' => [
+        'telescope' => false,
+        'ray' => true,
+        'clockwork' => true,
+        'debugbar' => true,
+        'log' => false,
+        'browser' => false,
+    ]
+];
+
+```
+
 ## Examples 
 
 ```php 
