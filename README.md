@@ -25,31 +25,6 @@ If you want to change this behaviour you can publish the config file and change 
 composer require dietercoopman/laravel-showsql --dev
 ```
 
-## Configuration
-
-You can publish the config file with the following command
-
-```shell
-php artisan vendor:publish --tag=showsql-config 
-```
-
-Laravel showsql is default configured to output to ray,clockwork and laravel debugbar.  If you want to change this you can do it in the published config file.
-
-```php
-
-return [
-    'to' => [
-        'telescope' => false,
-        'ray' => true,
-        'clockwork' => true,
-        'debugbar' => true,
-        'log' => false,
-        'browser' => false,
-    ]
-];
-
-```
-
 ## Examples 
 
 ```php 
@@ -81,6 +56,31 @@ DB::table('products')->where('id', '=', 1)->show($callback)->get();
 ## This is an example log output
 
 ![showsql example](example.png)
+
+## Configuration
+
+You can publish the config file with the following command
+
+```shell
+php artisan vendor:publish --tag=showsql-config 
+```
+
+Laravel showsql is default configured to output to ray,clockwork and laravel debugbar.  If you want to change this you can do it in the published config file.
+
+```php
+
+return [
+    'to' => [
+        'telescope' => false,
+        'ray' => true,
+        'clockwork' => true,
+        'debugbar' => true,
+        'log' => false,
+        'browser' => false,
+    ]
+];
+
+```
 
 ## Why is this not available in the core of Laravel ?
 
