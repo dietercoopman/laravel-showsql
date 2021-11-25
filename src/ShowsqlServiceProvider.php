@@ -14,7 +14,7 @@ class ShowsqlServiceProvider extends PackageServiceProvider
             ->name('showsql')
             ->hasConfigFile();
 
-        Builder::macro('showSql', function ($callback) {
+        Builder::macro('showSql', function ($callback = null) {
             $showSql = new ShowSql($this, $callback);
 
             return $showSql->getBuilder();
