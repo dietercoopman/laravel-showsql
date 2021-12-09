@@ -50,7 +50,7 @@ $callback = function(string $sql){
   Log::info($sql);
 };
 
-DB::table('products')->where('id', '=', 1)->show($callback)->get();
+DB::table('products')->where('id', '=', 1)->showSql($callback)->get();
 ```
 
 ## This is an example log output
