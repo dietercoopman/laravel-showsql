@@ -3,16 +3,16 @@
 namespace Dietercoopman\Showsql;
 
 use Illuminate\Database\Query\Builder;
-use Spatie\LaravelPackageTools\Package;
-use Spatie\LaravelPackageTools\PackageServiceProvider;
+use Illuminate\Support\ServiceProvider;
 
-class ShowsqlServiceProvider extends PackageServiceProvider
+class ShowsqlServiceProvider extends ServiceProvider
 {
-    public function configurePackage(Package $package): void
+    public function boot(): void
     {
-        $package
-            ->name('showsql')
-            ->hasConfigFile();
+
+        $this->publishes([
+            __DIR__ . '/../config/showsql.php' => config_path('showsql.php'),
+        ]);
 
         Builder::macro('showSql', function ($callback = null) {
             $showSql = new ShowSql($this, $callback);
