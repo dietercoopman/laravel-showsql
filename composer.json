@@ -44,10 +44,7 @@
         "laravel": {
             "providers": [
                 "Dietercoopman\\Showsql\\ShowsqlServiceProvider"
-            ],
-            "aliases": {
-                "Showsql": "Dietercoopman\\Showsql\\ShowsqlFacade"
-            }
+            ]
         }
     },
     "minimum-stability": "dev",
