@@ -11,7 +11,7 @@ class ShowsqlServiceProvider extends ServiceProvider
     {
         $this->publishes([
             __DIR__ . '/../config/showsql.php' => config_path('showsql.php'),
-        ]);
+        ], 'smart-config');
 
         Builder::macro('showSql', function ($callback = null) {
             $showSql = new ShowSql($this, $callback);
