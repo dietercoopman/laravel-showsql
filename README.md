@@ -19,7 +19,7 @@ If you want your own log implementation you can pass a callback to showSql.
 
 If you want to change this behaviour you can publish the config file and change it.
 
-## Compability
+## Compatibility
 
 This package can be installed in Laravel 6,7,8 and 9
 
