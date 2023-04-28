@@ -86,7 +86,7 @@ return [
 
 ```
 
-## Why is this not available in the core of Laravel ?
+## Why is this not available in the core of Laravel?
 
 I've created a pull request to the framework that has been declined.  It adds too much extra logic to the framework itself.
 The queries as generated in this code are actual not the real statements as passed to your database engines.  The real sql never lives 
