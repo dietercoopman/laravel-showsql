@@ -1,6 +1,6 @@
 ![showsql](https://banners.beyondco.de/Laravel%20showsql.png?theme=light&packageManager=composer+require&packageName=dietercoopman%2Flaravel-showsql&pattern=architect&style=style_1&description=giving+attention+to+that+one+sql&md=1&showWatermark=1&fontSize=100px&images=https%3A%2F%2Flaravel.com%2Fimg%2Flogomark.min.svg)
 
-![Tests](https://github.com/dietercoopman/laravel-showsql/workflows/run-tests/badge.svg)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/dietercoopman/laravel-showsql.svg?style=flat-square)](https://packagist.org/packages/dietercoopman/laravel-showsql)
 ![Downloads](https://img.shields.io/packagist/dt/dietercoopman/laravel-showsql.svg?style=flat-square)
 
 # Laravel showsql
