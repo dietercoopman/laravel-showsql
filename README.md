@@ -21,7 +21,7 @@ If you want to change this behaviour you can publish the config file and change 
 
 ## Compatibility
 
-This package can be installed in Laravel 6,7,8,9 and 10
+This package can be installed in Laravel 6,7,8,9,10,11 and 12
 
 ## Installation 
 
